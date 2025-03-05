@@ -1,4 +1,4 @@
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import {publicRoutes} from "./publicRoutes.ts";
 import React from "react";
 
@@ -14,6 +14,9 @@ export const PublicRouter = () => {
                     />
                 ))
             }
+
+            <Route path={'/*'} element={<Navigate to={'/login'}/>}/>
+
         </Routes>
     );
 }

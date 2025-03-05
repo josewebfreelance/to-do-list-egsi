@@ -5,12 +5,8 @@ import {PublicRouter} from "./public";
 export const AppRoutes = () => {
     return (
         <Routes>
-            <Route path={'/*'} element={
-                <PublicRouter />            }
-            />
-
-
-            <Route path={'*'} element={<Navigate to={'/login'} replace/>}/>
+            <Route path="/*" element={<PublicRouter />} />
+            <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
     );
 }

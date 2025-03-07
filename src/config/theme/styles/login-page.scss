@@ -41,6 +41,10 @@
         align-items: center;
         position: relative;
 
+        @media (820px >= width) {
+            display: none;
+        }
+
         .text {
             position: absolute;
             z-index: 1;

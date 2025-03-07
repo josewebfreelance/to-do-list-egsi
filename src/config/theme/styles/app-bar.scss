@@ -1,0 +1,33 @@
+.app-bar-component {
+
+  .order-item-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+    h6 {
+      font-size: 1.2rem;
+      margin: 0 1rem 0 0;
+    }
+
+    li {
+      > div {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .user-content {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+      > div {
+        width: 52px;
+        height: 52px;
+      }
+    }
+  }
+}
